@@ -1,0 +1,87 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Sprite",
+					"sid": 212777436110451
+				}
+			],
+			"actions": [
+				{
+					"id": "pause",
+					"objectClass": "Vídeo",
+					"sid": 578598651809760
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 601241440195857,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 688214631770980
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón",
+					"sid": 732214923024274
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Botón",
+					"sid": 555419277937724,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Vídeo",
+					"sid": 224672868909513
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite",
+					"sid": 933616047690492,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 826200975708450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "Vídeo",
+					"sid": 647310554887926
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 733385264472623,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 342603156268937
+		}
+	],
+	"sid": 272909422264756
+}
