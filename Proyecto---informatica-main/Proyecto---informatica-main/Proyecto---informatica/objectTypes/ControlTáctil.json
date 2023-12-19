@@ -1,0 +1,12 @@
+{
+	"name": "ControlTáctil",
+	"plugin-id": "Touch",
+	"sid": 793578927352368,
+	"singleglobal-inst": {
+		"type": "ControlTáctil",
+		"properties": {
+			"use-mouse-input": true
+		},
+		"uid": 10
+	}
+}

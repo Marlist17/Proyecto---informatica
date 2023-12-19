@@ -1,0 +1,374 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "triviaQuestions",
+			"type": "string",
+			"initialValue": "var array = [   [\"Question1\", \"Answer1\", \"Answer2\", \"Answer3\", \"Answer1\"],   [\"Question2\", \"Answer1\", \"Answer2\", \"Answer3\", \"Answer1\"],   [\"Question3\", \"Answer1\", \"Answer2\", \"Answer3\", \"Answer1\"],   [\"Question4\", \"Answer1\", \"Answer2\", \"Answer3\", \"Answer1\"],   [\"Question5\", \"Answer1\", \"Answer2\", \"Answer3\", \"Answer1\"] ];",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 232700838341028
+		},
+		{
+			"eventType": "variable",
+			"name": "contador",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 380166779930975
+		},
+		{
+			"eventType": "variable",
+			"name": "QuestionNum",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 626553892165109
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Sprite",
+					"sid": 212777436110451
+				}
+			],
+			"actions": [
+				{
+					"id": "pause",
+					"objectClass": "Vídeo",
+					"sid": 578598651809760
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 601241440195857,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 688214631770980
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón",
+					"sid": 732214923024274
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Botón",
+					"sid": 555419277937724,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Vídeo",
+					"sid": 224672868909513
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite",
+					"sid": 933616047690492,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 826200975708450
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "Vídeo",
+					"sid": 647310554887926
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 733385264472623,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 342603156268937
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 365071015941618
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "array",
+					"sid": 830697373754047,
+					"parameters": {
+						"json": "triviaQuestions"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "texto",
+					"sid": 638404825446514,
+					"parameters": {
+						"text": "array.at(0,0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta1",
+					"sid": 821451153472200,
+					"parameters": {
+						"text": "array.At(0,1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta2",
+					"sid": 100581465311006,
+					"parameters": {
+						"text": "array.At(0,2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta3",
+					"sid": 560361648228775,
+					"parameters": {
+						"text": "array.At(0,3)"
+					}
+				}
+			],
+			"sid": 160319990241993
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "ControlTáctil",
+					"sid": 764034340286028,
+					"parameters": {
+						"object": "respuesta1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "CheckAnswer",
+					"sid": 887481472502096,
+					"parameters": [
+						"respuesta1.Text"
+					]
+				}
+			],
+			"sid": 419048315238399
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "ControlTáctil",
+					"sid": 409393583840834,
+					"parameters": {
+						"object": "respuesta2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "CheckAnswer",
+					"sid": 565670951055989,
+					"parameters": [
+						"respuesta2.Text"
+					]
+				}
+			],
+			"sid": 293305221317197
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-touched-object",
+					"objectClass": "ControlTáctil",
+					"sid": 406384555639465,
+					"parameters": {
+						"object": "respuesta3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "CheckAnswer",
+					"sid": 445336931763302,
+					"parameters": [
+						"respuesta3.Text"
+					]
+				}
+			],
+			"sid": 553203042057260
+		},
+		{
+			"functionName": "CheckAnswer",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "answer",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 214761325874643
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 120582320688670,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 248104236266196,
+							"parameters": {
+								"first-value": "answer",
+								"comparison": 0,
+								"second-value": "array.At(QuestionNum,4)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 920502768173192,
+							"parameters": {
+								"variable": "contador",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 495449679468473,
+							"parameters": {
+								"variable": "QuestionNum",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "SiguientePregunta",
+							"sid": 546644458181402
+						}
+					],
+					"sid": 744080223468152
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 573017835663016
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 296868439031777,
+							"parameters": {
+								"variable": "QuestionNum",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "SiguientePregunta",
+							"sid": 540401684355265
+						}
+					],
+					"sid": 349271403314871
+				}
+			]
+		},
+		{
+			"functionName": "SiguientePregunta",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "texto",
+					"sid": 837198017620517,
+					"parameters": {
+						"text": "array.at(QuestionNum,0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta1",
+					"sid": 865207319046009,
+					"parameters": {
+						"text": "array.At(QuestionNum,1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta2",
+					"sid": 978179390230678,
+					"parameters": {
+						"text": "array.At(QuestionNum,2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta3",
+					"sid": 745421054712048,
+					"parameters": {
+						"text": "array.At(QuestionNum,3)"
+					}
+				}
+			],
+			"sid": 258264239238116
+		}
+	],
+	"sid": 272909422264756
+}
