@@ -6,41 +6,63 @@
 			"conditions": [
 				{
 					"id": "is-visible",
-					"objectClass": "Sprite",
-					"sid": 212777436110451
+					"objectClass": "Sprite4",
+					"sid": 937366308780286
 				}
 			],
 			"actions": [
 				{
 					"id": "pause",
 					"objectClass": "Vídeo",
-					"sid": 578598651809760
+					"sid": 358599661011739
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite4",
+					"sid": 826830958026675,
+					"parameters": {
+						"animation": "\"Pantalla_Inicio\"",
+						"from": "beginning"
+					}
 				},
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite2",
-					"sid": 601241440195857,
+					"objectClass": "Sprite6",
+					"sid": 603183943094404,
 					"parameters": {
 						"visibility": "invisible"
 					}
 				}
 			],
-			"sid": 688214631770980
+			"sid": 206349237070648
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-clicked",
-					"objectClass": "Botón",
-					"sid": 732214923024274
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 545750207765030,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite2"
+					}
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "Botón",
-					"sid": 555419277937724,
+					"objectClass": "Sprite2",
+					"sid": 831906631973492,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite4",
+					"sid": 352865060554768,
 					"parameters": {
 						"visibility": "invisible"
 					}
@@ -48,18 +70,10 @@
 				{
 					"id": "play",
 					"objectClass": "Vídeo",
-					"sid": 224672868909513
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Sprite",
-					"sid": 933616047690492,
-					"parameters": {
-						"visibility": "invisible"
-					}
+					"sid": 647022172217745
 				}
 			],
-			"sid": 826200975708450
+			"sid": 322614312769470
 		},
 		{
 			"eventType": "block",
@@ -67,21 +81,30 @@
 				{
 					"id": "has-ended",
 					"objectClass": "Vídeo",
-					"sid": 647310554887926
+					"sid": 463645606401936
 				}
 			],
 			"actions": [
 				{
 					"id": "set-visible",
-					"objectClass": "Sprite2",
-					"sid": 733385264472623,
+					"objectClass": "Sprite6",
+					"sid": 617256223135196,
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite6",
+					"sid": 203275499360843,
+					"parameters": {
+						"animation": "\"Pantalla_juego\"",
+						"from": "beginning"
+					}
 				}
 			],
-			"sid": 342603156268937
+			"sid": 554605034583575
 		}
 	],
-	"sid": 272909422264756
+	"sid": 964994096014504
 }

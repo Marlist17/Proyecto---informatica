@@ -7,7 +7,34 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite",
+					"type": "Vídeo",
+					"properties": {
+						"webm-source": "",
+						"h264-source": "video.mp4",
+						"autoplay": "yes",
+						"play-in-background": false,
+						"initially-visible": true
+					},
+					"uid": 4,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -6,
+						"y": -1,
+						"width": 2171,
+						"height": 1623,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Sprite6",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -15,14 +42,14 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 2,
+					"uid": 3,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 430,
-						"y": 241,
-						"width": 858,
-						"height": 478,
+						"x": 1080,
+						"y": 810,
+						"width": 2171,
+						"height": 1622,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -36,30 +63,32 @@
 					}
 				},
 				{
-					"type": "Vídeo",
+					"type": "Sprite4",
 					"properties": {
-						"webm-source": "",
-						"h264-source": "patata.mp4",
-						"autoplay": "yes",
-						"play-in-background": false,
-						"initially-visible": true
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 3,
+					"uid": 6,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 0,
-						"y": 2,
-						"width": 859,
-						"height": 479,
-						"originX": 0,
-						"originY": 0,
+						"x": 1082,
+						"y": 815,
+						"width": 2168,
+						"height": 1620,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
 							1
-						]
+						],
+						"angle": 0,
+						"zElevation": 0
 					}
 				},
 				{
@@ -71,16 +100,16 @@
 						"enable-collisions": true,
 						"live-preview": false
 					},
-					"uid": 4,
+					"uid": 2,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 437,
-						"y": 242,
-						"width": 870,
-						"height": 481,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 1086,
+						"y": 807,
+						"width": 309,
+						"height": 306,
+						"originX": 0.47896440129449835,
+						"originY": -1.0718954248366013,
 						"color": [
 							1,
 							1,
@@ -90,40 +119,9 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
-				{
-					"type": "Botón",
-					"properties": {
-						"type": "button",
-						"text": "OK",
-						"tooltip": "",
-						"initially-visible": true,
-						"enabled": true,
-						"auto-font-size": true,
-						"checked": false,
-						"id": "",
-						"class": ""
-					},
-					"uid": 5,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 378,
-						"y": 217,
-						"width": 143,
-						"height": 71,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						]
-					}
 				}
 			],
-			"sid": 563609987226662,
+			"sid": 122263781203340,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -134,9 +132,9 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
 				1
 			],
 			"isTransparent": false,
@@ -152,11 +150,11 @@
 			"global": false
 		}
 	],
-	"sid": 898859095038666,
+	"sid": 822352278864087,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 1708,
-	"height": 960,
+	"width": 4320,
+	"height": 3240,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,
