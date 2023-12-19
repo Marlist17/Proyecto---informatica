@@ -1,0 +1,423 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "array",
+			"type": "string",
+			"initialValue": "var array = [   [\"Question1\", \"Answer1\", \"Answer2\", \"Answer3\", \"Answer1\"],   [\"Question2\", \"Answer1\", \"Answer2\", \"Answer3\", \"Answer1\"],   [\"Question3\", \"Answer1\", \"Answer2\", \"Answer3\", \"Answer1\"],   [\"Question4\", \"Answer1\", \"Answer2\", \"Answer3\", \"Answer1\"],   [\"Question5\", \"Answer1\", \"Answer2\", \"Answer3\", \"Answer1\"] ];",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 669982382795397
+		},
+		{
+			"eventType": "variable",
+			"name": "contador",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 250447140246627
+		},
+		{
+			"eventType": "variable",
+			"name": "NúmeroPregunta",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 730069603435646
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Sprite",
+					"sid": 573948170239999
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite3",
+					"sid": 576256412322436,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta1",
+					"sid": 353510681329359,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "respuesta1",
+					"sid": 876461592248529,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "respuesta2",
+					"sid": 256564331582494,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "respuesta3",
+					"sid": 653945844291505,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "HongShiCulturista",
+					"sid": 404590961377476,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 206349237070648
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 545750207765030,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 831906631973492,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite",
+					"sid": 403294121651970,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite5",
+					"sid": 620548689123509,
+					"parameters": {
+						"animation": "\"Inicio\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-animation-speed",
+					"objectClass": "Sprite5",
+					"sid": 708706076575286,
+					"parameters": {
+						"speed": "3"
+					}
+				}
+			],
+			"sid": 322614312769470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-animation-finished",
+					"objectClass": "Sprite5",
+					"sid": 977345329194199
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite5",
+					"sid": 267625540720244,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite3",
+					"sid": 160896534261358,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta1",
+					"sid": 449416172055190,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "respuesta1",
+					"sid": 217305621314224,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "respuesta2",
+					"sid": 821048220861378,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "respuesta3",
+					"sid": 698153866668347,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 554605034583575
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 861481292221277
+				}
+			],
+			"actions": [
+				{
+					"id": "load",
+					"objectClass": "Array",
+					"sid": 380727236033667,
+					"parameters": {
+						"json": "array"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Pregunta1",
+					"sid": 191868255846867,
+					"parameters": {
+						"text": "Array.At(0,0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta1",
+					"sid": 712166514480857,
+					"parameters": {
+						"text": "Array.At(0,1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta2",
+					"sid": 599181900582198,
+					"parameters": {
+						"text": "Array.At(0,2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta3",
+					"sid": 135254742977596,
+					"parameters": {
+						"text": "Array.At(0,3)"
+					}
+				}
+			],
+			"sid": 185199322084344
+		},
+		{
+			"functionName": "Comprobar",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "respuesta",
+					"type": "string",
+					"initialValue": "",
+					"comment": "",
+					"sid": 258668518326755
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 511261161915212,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 268272859182270,
+							"parameters": {
+								"first-value": "respuesta",
+								"comparison": 0,
+								"second-value": "Array.At(NúmeroPregunta,4)"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 391210824962925,
+							"parameters": {
+								"variable": "contador",
+								"value": "1"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 323665220687944,
+							"parameters": {
+								"variable": "NúmeroPregunta",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "SiguientePregunta",
+							"sid": 829560841031573
+						}
+					],
+					"sid": 208119456530675
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 272939072723876
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 585689788782269,
+							"parameters": {
+								"variable": "NúmeroPregunta",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "SiguientePregunta",
+							"sid": 464468751752648
+						}
+					],
+					"sid": 660980627483961
+				}
+			]
+		},
+		{
+			"functionName": "SiguientePregunta",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Pregunta1",
+					"sid": 681574933418870,
+					"parameters": {
+						"text": "Array.At(NúmeroPregunta,0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta1",
+					"sid": 559211001082307,
+					"parameters": {
+						"text": "Array.At(NúmeroPregunta,1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta2",
+					"sid": 948943037900021,
+					"parameters": {
+						"text": "Array.At(NúmeroPregunta,2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "respuesta3",
+					"sid": 587449237146862,
+					"parameters": {
+						"text": "Array.At(NúmeroPregunta,3)"
+					}
+				}
+			],
+			"sid": 279997298083467
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 119904788264163,
+					"parameters": {
+						"variable": "NúmeroPregunta",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "HongShiCulturista",
+					"sid": 163412548699824,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 763525622226440
+		}
+	],
+	"sid": 964994096014504
+}
