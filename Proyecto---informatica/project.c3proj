@@ -1,15 +1,15 @@
 {
 	"projectFormatVersion": 1,
 	"savedWithRelease": 36802,
-	"name": "Proyecto juego",
+	"name": "Juego definitivo",
 	"runtime": "c3",
 	"useWorker": "auto",
 	"bundleAddons": false,
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Button",
-			"name": "Botón",
+			"id": "Mouse",
+			"name": "Mouse",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -19,22 +19,16 @@
 			"name": "Sprite",
 			"author": "Scirra",
 			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "video",
-			"name": "Vídeo",
-			"author": "Scirra",
-			"bundled": false
 		}
 	],
-	"uniqueId": "ikbqeh3gsao",
+	"uniqueId": "f0bhs6mmv7c",
 	"objectTypes": {
 		"items": [
 			"Sprite",
-			"Vídeo",
 			"Sprite2",
-			"Botón"
+			"Mouse",
+			"Sprite3",
+			"Sprite5"
 		],
 		"subfolders": []
 	},
@@ -72,9 +66,25 @@
 		"video": {
 			"items": [
 				{
+					"name": "Pantalla inicio.mp4",
+					"type": "video/mp4",
+					"sid": 105297114488430,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
 					"name": "patata.mp4",
 					"type": "video/mp4",
-					"sid": 574774908574086,
+					"sid": 680649021001460,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Pantalla de juego.mp4",
+					"type": "video/mp4",
+					"sid": 373432633782555,
 					"file-info": {
 						"purpose": "none"
 					}
@@ -89,9 +99,9 @@
 		"icon": {
 			"items": [
 				{
-					"name": "icono-16.png",
+					"name": "icono-512.png",
 					"type": "image/png",
-					"sid": 544864229409685,
+					"sid": 432498887058842,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -99,7 +109,15 @@
 				{
 					"name": "icono-32.png",
 					"type": "image/png",
-					"sid": 672305069574842,
+					"sid": 564376236805425,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-16.png",
+					"type": "image/png",
+					"sid": 284849547900244,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -107,31 +125,7 @@
 				{
 					"name": "icono-64.png",
 					"type": "image/png",
-					"sid": 977456626260387,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-128.png",
-					"type": "image/png",
-					"sid": 984288971173329,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-256.png",
-					"type": "image/png",
-					"sid": 754870668004862,
-					"icon-info": {
-						"purpose": "app-icon"
-					}
-				},
-				{
-					"name": "icono-512.png",
-					"type": "image/png",
-					"sid": 907314178544237,
+					"sid": 920251819715122,
 					"icon-info": {
 						"purpose": "app-icon"
 					}
@@ -139,9 +133,25 @@
 				{
 					"name": "logo-carga.png",
 					"type": "image/png",
-					"sid": 149554555122676,
+					"sid": 843682856064062,
 					"icon-info": {
 						"purpose": "loading-logo"
+					}
+				},
+				{
+					"name": "icono-128.png",
+					"type": "image/png",
+					"sid": 618628886460017,
+					"icon-info": {
+						"purpose": "app-icon"
+					}
+				},
+				{
+					"name": "icono-256.png",
+					"type": "image/png",
+					"sid": 263181808922655,
+					"icon-info": {
+						"purpose": "app-icon"
 					}
 				}
 			],
@@ -217,7 +227,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 854,
-	"viewportHeight": 480,
+	"viewportWidth": 2160,
+	"viewportHeight": 1620,
 	"firstLayout": null
 }
