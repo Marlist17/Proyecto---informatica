@@ -1,0 +1,559 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Contador",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 579804854376570
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Sprite4",
+					"sid": 937366308780286
+				}
+			],
+			"actions": [
+				{
+					"id": "pause",
+					"objectClass": "Vídeo",
+					"sid": 358599661011739
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite4",
+					"sid": 826830958026675,
+					"parameters": {
+						"animation": "\"Pantalla_Inicio\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 603183943094404,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta1",
+					"sid": 646627454018192,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta1",
+					"sid": 473622218785783,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta2",
+					"sid": 263158404759938,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta3",
+					"sid": 367981658614613,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite3",
+					"sid": 626803225847785,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 206349237070648
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 545750207765030,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 831906631973492,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite4",
+					"sid": 352865060554768,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Vídeo",
+					"sid": 647022172217745
+				}
+			],
+			"sid": 322614312769470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "Vídeo",
+					"sid": 463645606401936
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 617256223135196,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite6",
+					"sid": 203275499360843,
+					"parameters": {
+						"animation": "\"Pantalla_juego\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta1",
+					"sid": 699770657127925,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta1",
+					"sid": 681809882626069,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta2",
+					"sid": 291766987221981,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta3",
+					"sid": 370690494929335,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 554605034583575
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-loader-layout-complete",
+					"objectClass": "System",
+					"sid": 500293194730080
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Pregunta1",
+					"sid": 445902487709052,
+					"parameters": {
+						"text": "Array.Pregunta1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta1",
+					"sid": 984015215624990,
+					"parameters": {
+						"text": "Array.Respuesta1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta2",
+					"sid": 502703728477233,
+					"parameters": {
+						"text": "Array.Respuesta2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta3",
+					"sid": 426286320212991,
+					"parameters": {
+						"text": "Array.Respuesta3"
+					}
+				}
+			],
+			"sid": 539433271109007
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 417310965236648,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Respuesta1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Comprobar",
+					"sid": 880532345492547,
+					"parameters": [
+						"\"0\""
+					]
+				},
+				{
+					"callFunction": "Comprobar2",
+					"sid": 628174264647849,
+					"parameters": [
+						"\"0\""
+					]
+				}
+			],
+			"sid": 835905747354178
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 628257001352375,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Respuesta2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Comprobar",
+					"sid": 133254269177752,
+					"parameters": [
+						"Array.Respuesta2"
+					]
+				},
+				{
+					"callFunction": "Comprobar2",
+					"sid": 605567789403036,
+					"parameters": [
+						"\"0\""
+					]
+				}
+			],
+			"sid": 661642795946075
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 935699195917447,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Respuesta3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Comprobar",
+					"sid": 686203447234278,
+					"parameters": [
+						"\"0\""
+					]
+				},
+				{
+					"callFunction": "Comprobar2",
+					"sid": 674939855045609,
+					"parameters": [
+						"Array.Respuesta6"
+					]
+				}
+			],
+			"sid": 188528525294089
+		},
+		{
+			"functionName": "Comprobar",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Respuesta",
+					"type": "string",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 791658839463589
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 615357417183465,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 944780596373428,
+							"parameters": {
+								"first-value": "Respuesta",
+								"comparison": 0,
+								"second-value": "Array.Respuesta2 "
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 190763581432932,
+							"parameters": {
+								"variable": "Contador",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "SiguientePregunta",
+							"sid": 470851879439669
+						}
+					],
+					"sid": 898334924906973
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 494375780496901
+						}
+					],
+					"actions": [
+						{
+							"callFunction": "SiguientePregunta",
+							"sid": 266791099081431
+						}
+					],
+					"sid": 424251738806934
+				}
+			]
+		},
+		{
+			"functionName": "SiguientePregunta",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Pregunta1",
+					"sid": 544533395049694,
+					"parameters": {
+						"text": "Array.Pregunta2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta1",
+					"sid": 564184787623948,
+					"parameters": {
+						"text": "Array.Respuesta4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta2",
+					"sid": 968912348497684,
+					"parameters": {
+						"text": "Array.Respuesta5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta3",
+					"sid": 624236690387890,
+					"parameters": {
+						"text": "Array.Respuesta6"
+					}
+				}
+			],
+			"sid": 295591277831609
+		},
+		{
+			"functionName": "Comprobar2",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Respuesta",
+					"type": "string",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 315852747968270
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 536876494061015,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 830530470826171,
+							"parameters": {
+								"first-value": "Respuesta",
+								"comparison": 0,
+								"second-value": "Array.Respuesta6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 191789606138088,
+							"parameters": {
+								"variable": "Contador",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 229921219623031
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 334472644005063
+						}
+					],
+					"actions": [],
+					"sid": 194823868291558
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 555699814883537,
+					"parameters": {
+						"variable": "Contador",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite3",
+					"sid": 762375637763921,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 681805410083283
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 364349379244005
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "contador",
+					"sid": 571198717816416,
+					"parameters": {
+						"text": "Contador"
+					}
+				}
+			],
+			"sid": 165453357083955
+		}
+	],
+	"sid": 964994096014504
+}
