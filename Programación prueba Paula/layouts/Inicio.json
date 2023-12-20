@@ -1,0 +1,436 @@
+{
+	"name": "Inicio",
+	"layers": [
+		{
+			"name": "Capa 0",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "Vídeo",
+					"properties": {
+						"webm-source": "",
+						"h264-source": "video.mp4",
+						"autoplay": "yes",
+						"play-in-background": false,
+						"initially-visible": true
+					},
+					"uid": 4,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": -6,
+						"y": -1,
+						"width": 2171,
+						"height": 1623,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Sprite6",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 3,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1080.5,
+						"y": 815,
+						"width": 2171,
+						"height": 1622.0000000000002,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite4",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 6,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1084,
+						"y": 811,
+						"width": 2168,
+						"height": 1620,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1072,
+						"y": 785,
+						"width": 309,
+						"height": 306,
+						"originX": 0.47896440129449835,
+						"originY": -1.0718954248366013,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Pregunta1",
+					"properties": {
+						"text": "Pregunta",
+						"enable-bbcode": true,
+						"font": "Rubik",
+						"size": 36,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 7,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 325,
+						"y": 287,
+						"width": 1080,
+						"height": 464,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Respuesta1",
+					"properties": {
+						"text": "Respuesta ",
+						"enable-bbcode": true,
+						"font": "Rubik",
+						"size": 36,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 8,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1288,
+						"y": 1060,
+						"width": 781,
+						"height": 149,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Respuesta2",
+					"properties": {
+						"text": "Respuesta ",
+						"enable-bbcode": true,
+						"font": "Rubik",
+						"size": 36,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 9,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1283,
+						"y": 1237,
+						"width": 768,
+						"height": 157,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Respuesta3",
+					"properties": {
+						"text": "Respuesta ",
+						"enable-bbcode": true,
+						"font": "Rubik",
+						"size": 36,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 10,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1285,
+						"y": 1430,
+						"width": 775,
+						"height": 168,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 13,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1053,
+						"y": 942,
+						"width": 725,
+						"height": 533,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BotonPlay2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 17,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1722,
+						"y": 574,
+						"width": 1800,
+						"height": 1393,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 122263781203340,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		}
+	],
+	"sid": 822352278864087,
+	"nonworld-instances": [
+		{
+			"type": "Array",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 11,
+			"instanceVariables": {
+				"Pregunta1": "He comprimido un archivo pero se me ha ido mucho la calidad, ¿que hago? ",
+				"Respuesta1": "Usa un descompresor de archivos como 7-Zip, que provoca pérdidas. ",
+				"Respuesta2": "Usa un descompresor de archivos como 7-Zip, que no provoca pérdidas.",
+				"Respuesta3": "Intenta abrirlo otra vez directamente, seguro que es un fallo del archivo :)",
+				"Pregunta2": "Quiero comprarme un ordenador para trabajar desde casa, pero no sé de que tipo comprarlo, ¿cuál me vendría mejor? Necesito que pueda almacenar muchos archivos.",
+				"Respuesta4": "Un Super Ordenador será lo más eficiente.",
+				"Respuesta5": "Un portátil es muy útil por su movilidad.",
+				"Respuesta6": "Un PC de Sobremesa es buena opción."
+			}
+		},
+		{
+			"type": "Array2",
+			"properties": {
+				"width": 10,
+				"height": 1,
+				"depth": 1
+			},
+			"uid": 19,
+			"instanceVariables": {
+				"Pregunta3": "Acabo de comprarme un PC por piezas y lo he montado, al encenderlo e intentar usarlo se me apaga, no sé qué puede ocurrir, ¿Sabrías que puede ser?",
+				"Respuesta7": "La fuente de alimentación ",
+				"Respuesta8": "La RAM ",
+				"Respuesta9": "La refrigeración de la torre",
+				"Pregunta4": "Estoy realizando un trabajo y necesito saber que tipo de licencia poner a las fuentes que estoy recabando. me pone lo siguientes: \"El material entregado a esta pagina está libre para que el consumidor pueda modificarlo actualizarlo y compartirlo ¿que tipo de licencia tengo que poner?",
+				"Respuesta10": "Un CC (Creative Commons) De compartir igual",
+				"Respuesta11": "Un CC de Reconocimiento  ",
+				"Respuesta12": "Un GNU (General Public Licence) lo contrario del copyright"
+			}
+		}
+	],
+	"effectTypes": [],
+	"width": 4320,
+	"height": 3240,
+	"unboundedScrolling": false,
+	"vpX": 0.5,
+	"vpY": 0.5,
+	"projection": "perspective",
+	"eventSheet": "Hoja de eventos 1"
+}
