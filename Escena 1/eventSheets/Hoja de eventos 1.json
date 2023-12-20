@@ -1,0 +1,110 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Sprite4",
+					"sid": 937366308780286
+				}
+			],
+			"actions": [
+				{
+					"id": "pause",
+					"objectClass": "Vídeo",
+					"sid": 358599661011739
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite4",
+					"sid": 826830958026675,
+					"parameters": {
+						"animation": "\"Pantalla_Inicio\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 603183943094404,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 206349237070648
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 545750207765030,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 831906631973492,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite4",
+					"sid": 352865060554768,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Vídeo",
+					"sid": 647022172217745
+				}
+			],
+			"sid": 322614312769470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "Vídeo",
+					"sid": 463645606401936
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 617256223135196,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite6",
+					"sid": 203275499360843,
+					"parameters": {
+						"animation": "\"Pantalla_juego\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 554605034583575
+		}
+	],
+	"sid": 964994096014504
+}
