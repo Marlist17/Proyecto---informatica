@@ -1,0 +1,64 @@
+{
+	"name": "Array2",
+	"plugin-id": "Arr",
+	"sid": 934907833895981,
+	"isGlobal": true,
+	"instanceVariables": [
+		{
+			"name": "Pregunta3",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 990871824449035
+		},
+		{
+			"name": "Respuesta7",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 730755388925539
+		},
+		{
+			"name": "Respuesta8",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 697693369887859
+		},
+		{
+			"name": "Respuesta9",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 239333431157544
+		},
+		{
+			"name": "Pregunta4",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 459702203602149
+		},
+		{
+			"name": "Respuesta10",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 247955669431795
+		},
+		{
+			"name": "Respuesta11",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 894314195326076
+		},
+		{
+			"name": "Respuesta12",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 714315069782996
+		}
+	]
+}
