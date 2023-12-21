@@ -670,6 +670,22 @@
 			],
 			"actions": [
 				{
+					"id": "set-opacity",
+					"objectClass": "BotonPlay2",
+					"sid": 338238104543972,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite3",
+					"sid": 363401101155378,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "Pregunta3",
 					"sid": 177740188670869,
@@ -699,22 +715,6 @@
 					"sid": 683111699673601,
 					"parameters": {
 						"visibility": "visible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "BotonPlay2",
-					"sid": 940790841348565,
-					"parameters": {
-						"visibility": "invisible"
-					}
-				},
-				{
-					"id": "set-visible",
-					"objectClass": "Sprite3",
-					"sid": 449080308160534,
-					"parameters": {
-						"visibility": "invisible"
 					}
 				}
 			],

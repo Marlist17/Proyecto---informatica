@@ -299,7 +299,7 @@
 				{
 					"type": "Sprite3",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -309,8 +309,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1053,
-						"y": 942,
+						"x": 1035,
+						"y": 876,
 						"width": 725,
 						"height": 533,
 						"originX": 0.5,
