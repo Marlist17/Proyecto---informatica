@@ -1,0 +1,56 @@
+{
+	"name": "Hoja de eventos 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 484338636389767
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 503055727867241,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 962482181769486,
+					"parameters": {
+						"layout": "Inicio"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 583776824947603,
+					"parameters": {
+						"variable": "Contador",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 589368680397579,
+					"parameters": {
+						"variable": "Contador2",
+						"value": "0"
+					}
+				}
+			],
+			"sid": 955770514830904
+		}
+	],
+	"sid": 901050102748812
+}

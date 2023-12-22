@@ -201,24 +201,11 @@
 					"parameters": {
 						"visibility": "visible"
 					}
-				}
-			],
-			"sid": 554605034583575
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-loader-layout-complete",
-					"objectClass": "System",
-					"sid": 500293194730080
-				}
-			],
-			"actions": [
+				},
 				{
 					"id": "set-text",
 					"objectClass": "Pregunta1",
-					"sid": 445902487709052,
+					"sid": 793710285186439,
 					"parameters": {
 						"text": "Array.Pregunta1"
 					}
@@ -226,7 +213,7 @@
 				{
 					"id": "set-text",
 					"objectClass": "Respuesta1",
-					"sid": 984015215624990,
+					"sid": 651282690326632,
 					"parameters": {
 						"text": "Array.Respuesta1"
 					}
@@ -234,7 +221,7 @@
 				{
 					"id": "set-text",
 					"objectClass": "Respuesta2",
-					"sid": 502703728477233,
+					"sid": 523224843146219,
 					"parameters": {
 						"text": "Array.Respuesta2"
 					}
@@ -242,13 +229,13 @@
 				{
 					"id": "set-text",
 					"objectClass": "Respuesta3",
-					"sid": 426286320212991,
+					"sid": 641553413571170,
 					"parameters": {
 						"text": "Array.Respuesta3"
 					}
 				}
 			],
-			"sid": 539433271109007
+			"sid": 554605034583575
 		},
 		{
 			"eventType": "block",
