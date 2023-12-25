@@ -1,0 +1,450 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Contador2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 199996034427780
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 671685624437366
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Texto4",
+					"sid": 219880795933699,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite14",
+					"sid": 818812754140708,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotonPlay2",
+					"sid": 573771304217683,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite11",
+					"sid": 347490103704263,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Pregunta3",
+					"sid": 678195679521300,
+					"parameters": {
+						"text": "Array2.Pregunta3"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta7",
+					"sid": 284736531807046,
+					"parameters": {
+						"text": "Array2.Respuesta7"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta8",
+					"sid": 438106598606046,
+					"parameters": {
+						"text": "Array2.Respuesta8"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta9",
+					"sid": 264268527404967,
+					"parameters": {
+						"text": "Array2.Respuesta9"
+					}
+				}
+			],
+			"sid": 838673327018352
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 930557233082702,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Respuesta7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Comprobar3",
+					"sid": 143248471227489,
+					"parameters": [
+						"Array2.Respuesta7"
+					]
+				},
+				{
+					"callFunction": "Comprobar4",
+					"sid": 439927998991516,
+					"parameters": [
+						"\"0\""
+					]
+				}
+			],
+			"sid": 635459112512938
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 257229843905482,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Respuesta8"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Comprobar3",
+					"sid": 815684390740512,
+					"parameters": [
+						"\"0\""
+					]
+				},
+				{
+					"callFunction": "Comprobar4",
+					"sid": 185102170455237,
+					"parameters": [
+						"\"0\""
+					]
+				}
+			],
+			"sid": 756172954443577
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 120758542667661,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Respuesta9"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Comprobar3",
+					"sid": 461682156046052,
+					"parameters": [
+						"\"0\""
+					]
+				},
+				{
+					"callFunction": "Comprobar4",
+					"sid": 491375607451872,
+					"parameters": [
+						"Array2.Respuesta12"
+					]
+				}
+			],
+			"sid": 707553488459907
+		},
+		{
+			"functionName": "Comprobar3",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "respuesta",
+					"type": "string",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 354617634436184
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 405672329223617,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 450551738310087,
+							"parameters": {
+								"first-value": "respuesta",
+								"comparison": 0,
+								"second-value": "Array2.Respuesta7"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 334189422717345,
+							"parameters": {
+								"variable": "Contador2",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "SiguientePregunta2",
+							"sid": 983492407627683
+						}
+					],
+					"sid": 572589397416074
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 620572141354901
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 705465489290745,
+							"parameters": {
+								"layout": "Lose"
+							}
+						}
+					],
+					"sid": 264173182926048
+				}
+			]
+		},
+		{
+			"functionName": "SiguientePregunta2",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite11",
+					"sid": 960223567031267,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite12",
+					"sid": 578542051910064,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Pregunta3",
+					"sid": 916405013564645,
+					"parameters": {
+						"text": "Array2.Pregunta4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta7",
+					"sid": 519651901428042,
+					"parameters": {
+						"text": "Array2.Respuesta10"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta8",
+					"sid": 508353409044399,
+					"parameters": {
+						"text": "Array2.Respuesta11"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta9",
+					"sid": 372323083201930,
+					"parameters": {
+						"text": "Array2.Respuesta12"
+					}
+				}
+			],
+			"sid": 880675785124795
+		},
+		{
+			"functionName": "Comprobar4",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "respuesta",
+					"type": "string",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 696754738641137
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 401459157991327,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 849746200125483,
+							"parameters": {
+								"first-value": "respuesta",
+								"comparison": 0,
+								"second-value": "Array2.Respuesta12"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 821316663750433,
+							"parameters": {
+								"variable": "Contador2",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 499049629120915
+				},
+				{
+					"eventType": "block",
+					"conditions": [],
+					"actions": [],
+					"sid": 879231719277524
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 534392391120447,
+					"parameters": {
+						"variable": "Contador2",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite14",
+					"sid": 539780328678492,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotonPlay2",
+					"sid": 742828216399397,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto4",
+					"sid": 726555304475030,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 533772677964668
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 175927807889187,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BotonPlay2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 397827729849324,
+					"parameters": {
+						"layout": "Win"
+					}
+				}
+			],
+			"sid": 295524497362336
+		}
+	],
+	"sid": 102913966697349
+}
