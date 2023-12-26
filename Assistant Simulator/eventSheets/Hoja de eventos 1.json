@@ -1,0 +1,696 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Contador",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 579804854376570
+		},
+		{
+			"eventType": "variable",
+			"name": "día",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 841358050684439
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-visible",
+					"objectClass": "Sprite4",
+					"sid": 937366308780286
+				}
+			],
+			"actions": [
+				{
+					"id": "pause",
+					"objectClass": "Vídeo",
+					"sid": 358599661011739
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 691795282557942,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 603183943094404,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite15",
+					"sid": 203784288594924,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotonPlay2",
+					"sid": 349268978907743,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta1",
+					"sid": 473622218785783,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta2",
+					"sid": 263158404759938,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta1",
+					"sid": 464889424974346,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta3",
+					"sid": 367981658614613,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite4",
+					"sid": 777547915063911,
+					"parameters": {
+						"animation": "\"Pantalla_Inicio\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 206349237070648
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 545750207765030,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Sprite2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite2",
+					"sid": 831906631973492,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite4",
+					"sid": 352865060554768,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Vídeo",
+					"sid": 647022172217745
+				}
+			],
+			"sid": 322614312769470
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "has-ended",
+					"objectClass": "Vídeo",
+					"sid": 463645606401936
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite6",
+					"sid": 617256223135196,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite6",
+					"sid": 566080717749780,
+					"parameters": {
+						"animation": "\"Pantalla_juego\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite8",
+					"sid": 291500439458260,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Pregunta1",
+					"sid": 699770657127925,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta1",
+					"sid": 681809882626069,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta2",
+					"sid": 291766987221981,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Respuesta3",
+					"sid": 370690494929335,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 554605034583575
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 940804321769306
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Pregunta1",
+					"sid": 899612342495942,
+					"parameters": {
+						"text": "Array.Pregunta1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta1",
+					"sid": 484527192939536,
+					"parameters": {
+						"text": "Array.Respuesta1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta2",
+					"sid": 362655679428456,
+					"parameters": {
+						"text": "Array.Respuesta2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta3",
+					"sid": 384395263280094,
+					"parameters": {
+						"text": "Array.Respuesta3"
+					}
+				}
+			],
+			"sid": 148329601341095
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 417310965236648,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Respuesta1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Comprobar",
+					"sid": 880532345492547,
+					"parameters": [
+						"\"0\""
+					]
+				},
+				{
+					"callFunction": "Comprobar2",
+					"sid": 628174264647849,
+					"parameters": [
+						"\"0\""
+					]
+				}
+			],
+			"sid": 835905747354178
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 628257001352375,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Respuesta2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Comprobar",
+					"sid": 133254269177752,
+					"parameters": [
+						"Array.Respuesta2"
+					]
+				},
+				{
+					"callFunction": "Comprobar2",
+					"sid": 605567789403036,
+					"parameters": [
+						"\"0\""
+					]
+				}
+			],
+			"sid": 661642795946075
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 935699195917447,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Respuesta3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Comprobar",
+					"sid": 686203447234278,
+					"parameters": [
+						"\"0\""
+					]
+				},
+				{
+					"callFunction": "Comprobar2",
+					"sid": 674939855045609,
+					"parameters": [
+						"Array.Respuesta6"
+					]
+				}
+			],
+			"sid": 188528525294089
+		},
+		{
+			"functionName": "Comprobar",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Respuesta",
+					"type": "string",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 791658839463589
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 615357417183465,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 910578391731646,
+							"parameters": {
+								"first-value": "Respuesta",
+								"comparison": 0,
+								"second-value": "Array.Respuesta2 "
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 625876094919569,
+							"parameters": {
+								"variable": "Contador",
+								"value": "1"
+							}
+						},
+						{
+							"callFunction": "SiguientePregunta",
+							"sid": 609079937012669
+						}
+					],
+					"sid": 898334924906973
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 971906365743564
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 301382863646601,
+							"parameters": {
+								"layout": "Lose"
+							}
+						}
+					],
+					"sid": 171816545470680
+				}
+			]
+		},
+		{
+			"functionName": "SiguientePregunta",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "set-opacity",
+					"objectClass": "Sprite8",
+					"sid": 495397879246089,
+					"parameters": {
+						"opacity": "0"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite10",
+					"sid": 355941348511316,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Pregunta1",
+					"sid": 544533395049694,
+					"parameters": {
+						"text": "Array.Pregunta2"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta1",
+					"sid": 564184787623948,
+					"parameters": {
+						"text": "Array.Respuesta4"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta2",
+					"sid": 968912348497684,
+					"parameters": {
+						"text": "Array.Respuesta5"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Respuesta3",
+					"sid": 624236690387890,
+					"parameters": {
+						"text": "Array.Respuesta6"
+					}
+				}
+			],
+			"sid": 295591277831609
+		},
+		{
+			"functionName": "Comprobar2",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Respuesta",
+					"type": "string",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 315852747968270
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 536876494061015,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 830530470826171,
+							"parameters": {
+								"first-value": "Respuesta",
+								"comparison": 0,
+								"second-value": "Array.Respuesta6"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 191789606138088,
+							"parameters": {
+								"variable": "Contador",
+								"value": "1"
+							}
+						}
+					],
+					"sid": 229921219623031
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 396090522549599
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "contador",
+					"sid": 741843970527635,
+					"parameters": {
+						"text": "Contador"
+					}
+				}
+			],
+			"sid": 268883072839514
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 503890905432816,
+					"parameters": {
+						"variable": "Contador",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Sprite15",
+					"sid": 683900538486900,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto3",
+					"sid": 616103313463933,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotonPlay2",
+					"sid": 568452600426922,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 681805410083283
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 519581787791307,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "BotonPlay2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 100177975917252,
+					"parameters": {
+						"layout": "Escena"
+					}
+				}
+			],
+			"sid": 899045212768381
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 818638673550107
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "contador",
+					"sid": 609678545226517,
+					"parameters": {
+						"text": "Contador2"
+					}
+				}
+			],
+			"sid": 832146063024767
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 942643727417312
+				}
+			],
+			"actions": [
+				{
+					"id": "play-by-name",
+					"objectClass": "Audio",
+					"sid": 272089935007041,
+					"parameters": {
+						"folder": "sounds",
+						"audio-file-name": "\"musica_fondo\"",
+						"loop": "looping",
+						"volume": "-2",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 498256115258632
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 185796414740134
+		}
+	],
+	"sid": 964994096014504
+}
