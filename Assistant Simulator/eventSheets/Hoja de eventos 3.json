@@ -23,6 +23,11 @@
 			],
 			"actions": [
 				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 337120461533635
+				},
+				{
 					"id": "go-to-layout",
 					"objectClass": "System",
 					"sid": 969881034246571,

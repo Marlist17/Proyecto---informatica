@@ -372,7 +372,7 @@
 				{
 					"type": "BotonPlay2",
 					"properties": {
-						"initially-visible": false,
+						"initially-visible": true,
 						"initial-animation": "Animation 1",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -412,7 +412,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1080,
-						"y": 816,
+						"y": 813,
 						"width": 2168,
 						"height": 1620,
 						"originX": 0.5,
@@ -440,8 +440,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1080,
-						"y": 822,
+						"x": 1072,
+						"y": 825,
 						"width": 309,
 						"height": 306,
 						"originX": 0.47896440129449835,
